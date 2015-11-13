@@ -36,16 +36,23 @@
 
 Örenek kod; 110A
 
-**R1 <-- M(0A)**  XY adresinde bulanan içeriği **R1** saklayıcısına yükle, yukardakı adres içerik tablosundan **0A** adresinin gösterdiği içeriği saklayıcıya yükle.
+**R1 <- M(0A)**  XY adresinde bulanan içeriği **R1** saklayıcısına yükle, yukardakı adres içerik tablosundan **0A** adresinin gösterdiği içeriği saklayıcıya yükle.
 
 ### Op-Code 2 için;
 
 Örenek kod; 2404
 
-**R4 <-- '04'**  XY içeriğini **R4** saklayıcısına yükle,
+**R4 <- '04'**  XY içeriğini **R4** saklayıcısına yükle,
 
 ### Op-Code B için
 
 Örenek kod; B40A
 
-**R4** saklayıcısı ile **R0** saklayıcılarının içeriğine bak içerik eşit ise XY kısmında gösterilen adrese git yani **0A** adresine git, eşit değilse bu adımı atla devam et. **R4 ve R0** saklayıcılarının eşit olduğunu varsayalım ve XY adresine yani **0A** adresine gidelim. *address content* tablosunu incelersek **0A** adresinde **C0** var bu durumda ise makine sonlanacak demektir(C0 HALT komutudur makineyi durdurur.)
+**R4** saklayıcısı ile **R0**(Op-Code tablo da belirtilen bir durum her zaman R0 saklayıcısıyla karşılaştırılır) saklayıcılarının içeriğine bak içerik eşit ise XY kısmında gösterilen adrese git yani **0A** adresine git, eşit değilse bu adımı atla devam et. **R4 ve R0** saklayıcılarının eşit olduğunu varsayalım ve XY adresine yani **0A** adresine gidelim. *address content* tablosunu incelersek **0A** adresinde **C0** var bu durumda ise makine sonlanacak demektir(C0 HALT komutudur makineyi durdurur.)
+
+#### Örnek kod için anlaşılması gereken durum 
+
+|Op-Code|Register(R)|X|Y|
+|:---:|:---:|:----:|:---:|
+|2 	  |	4   |     0|	4|
+|B 	  |	4   |     0|	A|
