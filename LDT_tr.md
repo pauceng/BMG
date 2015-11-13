@@ -28,6 +28,7 @@
 |08 	| C0	|
 |09 	| 00	|
 |0A 	| C0	|
+|0B 	| 00	|
 
 ### Op-Code 1 için;
 
@@ -45,11 +46,12 @@
 
 Örenek kod; B40A
 
-**R4** saklayıcısı ile **R0**(Op-Code tablo da belirtilen bir durum her zaman R0 saklayıcısıyla karşılaştırılır) saklayıcılarının içeriğine bak içerik eşit ise XY adresine git yani **0A** adresine git, eşit değilse bu adımı atla devam et. **R4 ve R0** saklayıcılarının eşit olduğunu varsayalım ve XY adresine, yani **0A** adresine gidelim. *address content* tablosunu incelersek **0A** adresinde **C0** var bu durumda ise makine sonlanacak demektir(C0 HALT komutudur makineyi durdurur.)
+**R4** saklayıcısı ile **R0**(*Op-Code tablo da belirtilen bir durum her zaman R0 saklayıcısıyla karşılaştırılır*) saklayıcılarının içeriğine bak içerik eşit ise XY adresine git yani, **0A** adresine git, eşit değilse bu adımı atla devam et. **R4 ve R0** saklayıcılarının eşit olduğunu varsayalım ve XY adresine, yani **0A** adresine gidelim. *address content* tablosunu incelersek **0A** adresinde **C0** var bu durumda ise makine sonlanacak demektir(C0 HALT komutudur makineyi durdurur.)
 
 #### Örnek kod için anlaşılması gereken durum 
 
-|Op-Code|Register(R)|X|Y|
+|Op-Code|Saklayıcı(R)|X|Y|
 |:---:|:---:|:----:|:---:|
+|1 	  |	1   |     0|	A|
 |2 	  |	4   |     0|	4|
 |B 	  |	4   |     0|	A|
