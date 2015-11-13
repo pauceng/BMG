@@ -9,6 +9,6 @@
 | 7| RST| **S** ve **T** saklayıcılarının bit desenlerinin **OR**(OR kapısı) sonucunu R saklayıcısına  **EKLE**(ADD)|
 | 8| RST| **S** ve **T** saklayıcılarının bit desenlerinin **AND**(AND kapısı) sonucunu R saklayıcısına  **EKLE**(ADD)|
 | 9| RST| **S** ve **T** saklayıcılarının bit desenlerinin **EXOR**(EXOR kapısı) sonucunu R saklayıcısına  **EKLE**(ADD)|
-| A| RST||
-| B| RXY||
+| A| R0X| **R** saklayıcısın içeriğini **X**bit sağa ROTATE et(dairesel olarak)|
+| B| RXY| **R** saklayıcısın içeriğini **0** saklayıcısın içeriğine eşit ise **XY** adresine git değilse **ATLA**|
 | C| 000| HALT makine durduran komut|
