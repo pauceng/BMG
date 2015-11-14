@@ -34,7 +34,7 @@
 
 Örenek kod; 110A
 
-**R1** \leftarrow **M(0A)  **XY** adresinde bulanan içeriği **R1** saklayıcısına yükle, yukardakı adres içerik tablosundan **0A** adresinin gösterdiği içeriği saklayıcıya yükle. Yani *address content* tablosu inçelediğimiz zaman **XY** adresimizin içeriği **C0** 'rı R1 saklayıcısna yükleyecektir.
+**R1** <-- **M(0A)  **XY** adresinde bulanan içeriği **R1** saklayıcısına yükle, yukardakı adres içerik tablosundan **0A** adresinin gösterdiği içeriği saklayıcıya yükle. Yani *address content* tablosu inçelediğimiz zaman **XY** adresimizin içeriği **C0** 'rı R1 saklayıcısna yükleyecektir.
 
 ### Op-Code 2 için;
 
@@ -42,7 +42,7 @@
 
 **XY** içeriğini **R4** saklayıcısına yükle,
 
-**R4** \leftarrow **'04'**
+**R4** <-- **'04'**
 
 ### Op-Code B için
 
