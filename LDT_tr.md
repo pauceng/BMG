@@ -34,7 +34,9 @@
 
 Örenek kod; 110A
 
-**R1** <-- **M(0A)  **XY** adresinde bulanan içeriği **R1** saklayıcısına yükle, yukardakı adres içerik tablosundan **0A** adresinin gösterdiği içeriği saklayıcıya yükle. Yani *address content* tablosu inçelediğimiz zaman **XY** adresimizin içeriği **C0** 'rı R1 saklayıcısna yükleyecektir.
+**XY** adresinde bulanan içeriği **R1** saklayıcısına yükle, yukardakı adres içerik tablosundan **0A** adresinin gösterdiği içeriği saklayıcıya yükle. Yani, *address content* tablosu incelediğimiz zaman **XY** adresimizin içeriği **C0** 'rı R1 saklayıcısna yükleyecektir.
+
+**R1** <-- **M(0A)**  
 
 ### Op-Code 2 için;
 
@@ -50,10 +52,19 @@
 
 **R4** saklayıcısı ile **R0**(*Op-Code tablo da belirtilen bir durum her zaman R0 saklayıcısıyla karşılaştırılır*) saklayıcılarının içeriğine bak içerik eşit ise XY adresine git yani, **0A** adresine git, eşit değilse bu adımı atla devam et. **R4 ve R0** saklayıcılarının eşit olduğunu varsayalım ve XY adresine, yani **0A** adresine gidelim. *address content* tablosunu incelersek **0A** adresinde **C0** var bu durumda ise makine sonlanacak demektir(C0 HALT komutudur makineyi durdurur.)
 
+### Op-Code A için;
+
+Örnek kod; A203
+
+**R** saklayıcısın içeriğini **X**bit sağa ROTATE et;
+
+**NOT:** Bu adımda dikkat edilmesi gereken ilk nokta LDT tablosunda **A** Op-Code için Operand **R0X** .YApmamız gereken ne? X kadar ROTATE et, yani XY gibi düşünürsek **Y** 'nin yerinde duran kısım bize lazım.
+
 #### Örnek kod için anlaşılması gereken durum 
 
 Örnek|Op-Code |Saklayıcı(R)|X|Y|
 -----|:------:|:---:|:----:|:---:|
 110A |1 	  |	1   |     0|	A|
 2404 |2 	  |	4   |     0|	4|
+A203 |A 	  |	2   |     0|	3|
 B40A |B 	  |	4   |     0|	A|
