@@ -2,7 +2,7 @@
 |----:|:----:|---------|
 | 1| RXY| **R** saklayıcısına **XY** bellek gözünde bulunan içeriği **YÜKLE**(LOAD)|
 | 2| RXY| **R** saklayıcısına **XY**'ni **YÜKLE**(LOAD)|
-| 3| RXY| **R** saklayıcısına **XY** bellek gözünde bulunan içeriği **DEPOLA**(STORE)|
+| 3| RXY| **R** saklayıcısının içeriğini **XY** bellek gözüne **DEPOLA**(STORE)|
 | 4| 0RS| **R** saklayıcısın bit deseninin içeriğini **S** saklayıcısının bit desenine **TAŞI**(MOVE) |
 | 5| RST| **S** saklayıcısın içeriği ile **T** saklayıcısının içeriğini topla **R** saklayıcısına **EKLE**(ADD)|
 | 6| RST| **S** ve **T** saklayıcılarının bit desenlerinin kayan noktalı notasyon sonucunu R saklayıcısına  **EKLE**(ADD)|
@@ -68,3 +68,32 @@
 2404 |2 	  |	4   |     0|	4|
 A203 |A 	  |	2   |     0|	3|
 B40A |B 	  |	4   |     0|	A|
+
+
+---------
+### BMG(Bilgisayar Mühendisliğine Giriş) 2014 final sorusu çözümü
+
+|address|content|	|address|content|
+|:-----:|:-----:|---|:-----:|:-----:|
+|00 	| 25	|	|07 	| 00	|
+|01 	| 03	|	|08 	| 34	|
+|02 	| A5	|	|09 	| 04	|
+|03 	| 02	|	|0A 	| B0	|
+|04 	| 35	|	|0B 	| 03	|
+|05 	| 03	|	|0C 	| C0	|
+|06 	| 24	|	|0D 	| 00	|
+
+
+* **Öndeclikle içerikleri(content) ikili grup şeklinde gruplar haline getirelim**
+
+Op-Code | R | X | Y |
+-------:|---|---|---|
+  	  2 | 5 | 0 | 3 |
+  	  A | 5 | 0 | 2 |
+  	  3 | 5 | 0 | 3 |
+  	  2 | 4 | 0 | 0 |
+  	  2 | 4 | 0 | 4 |
+  	  B | 0 | 0 | 3 |
+  	  C | 0 | 0 | 0 |
+
+![](https://github.com/PAU-Projects/BMG/blob/master/img/img1.png)
