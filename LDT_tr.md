@@ -58,7 +58,7 @@
 
 **R** saklayıcısın içeriğini **X**bit sağa ROTATE et;
 
-**NOT:** Bu adımda dikkat edilmesi gereken ilk nokta LDT tablosunda **A** Op-Code için Operand **R0X** .YApmamız gereken ne? X kadar ROTATE et, yani XY gibi düşünürsek **Y** 'nin yerinde duran kısım bize lazım.
+**NOT:** Bu adımda dikkat edilmesi gereken ilk nokta LDT tablosunda **A** Op-Code için Operand **R0X** .Yapmamız gereken ne? X kadar ROTATE et, yani XY gibi düşünürsek **Y** 'nin yerinde duran kısım bize lazım. R2 saklayıcısnın içeriğini 3 bit sağa ROTATE etmemiz gerekiyor.
 
 #### Örnek kod için anlaşılması gereken durum 
 
