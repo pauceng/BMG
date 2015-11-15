@@ -92,8 +92,10 @@ Op-Code | R | X | Y |
   	  A | 5 | 0 | 2 |
   	  3 | 5 | 0 | 3 |
   	  2 | 4 | 0 | 0 |
-  	  2 | 4 | 0 | 4 |
+  	  3 | 4 | 0 | 4 |
   	  B | 0 | 0 | 3 |
   	  C | 0 | 0 | 0 |
 
 ![](https://github.com/PAU-Projects/BMG/blob/master/img/img1.png)
+![](https://github.com/PAU-Projects/BMG/blob/master/img/img2.png)
+![](https://github.com/PAU-Projects/BMG/blob/master/img/img3.png)
