@@ -99,3 +99,6 @@ Op-Code | R | X | Y |
 ![](https://github.com/PAU-Projects/BMG/blob/master/img/img1.png)
 ![](https://github.com/PAU-Projects/BMG/blob/master/img/img2.png)
 ![](https://github.com/PAU-Projects/BMG/blob/master/img/img3.png)
+
+----
+Sorunun çözümü - [pdf](https://github.com/PAU-Projects/BMG/blob/master/doc/tr/BilgisayarMuhendisligineGirisLDT.pdf)
