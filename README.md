@@ -1,7 +1,7 @@
 # BMG
 Bilgisayar Mühendisliğine Giriş notları.
 
-* [![](/img/tr.png)][Türkçe Dosyalar](/doc/tr/)
+* ![](/img/tr.png)[Türkçe Dosyalar](/doc/tr/)
 * [:us: English Files](/doc/en/)
 
 * [pdf](https://github.com/PAU-Projects/BMG/blob/master/doc/) ler
